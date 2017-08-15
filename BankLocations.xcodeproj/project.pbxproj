@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		851396561F3C8E780067F9F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851396551F3C8E780067F9F2 /* AppDelegate.swift */; };
-		851396581F3C8E780067F9F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851396571F3C8E780067F9F2 /* ViewController.swift */; };
-		8513965B1F3C8E780067F9F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 851396591F3C8E780067F9F2 /* Main.storyboard */; };
 		8513965D1F3C8E780067F9F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8513965C1F3C8E780067F9F2 /* Assets.xcassets */; };
 		851396601F3C8E780067F9F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8513965E1F3C8E780067F9F2 /* LaunchScreen.storyboard */; };
+		8513966C1F3C8F080067F9F2 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8513966B1F3C8F080067F9F2 /* LocationViewController.swift */; };
+		8513966E1F3C91A80067F9F2 /* RegionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8513966D1F3C91A80067F9F2 /* RegionViewController.swift */; };
+		851396701F3C94070067F9F2 /* RegionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8513966F1F3C94070067F9F2 /* RegionTableView.swift */; };
+		851396741F3C9B210067F9F2 /* RegionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851396731F3C9B210067F9F2 /* RegionTableViewCell.swift */; };
+		854941141F3DEEDB00C130B0 /* LocationTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854941131F3DEEDB00C130B0 /* LocationTableView.swift */; };
+		854941161F3DEEED00C130B0 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854941151F3DEEED00C130B0 /* LocationTableViewCell.swift */; };
+		85A07B471F42E993003B0EDD /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A07B461F42E993003B0EDD /* LocationDetailViewController.swift */; };
+		85A07B491F430A63003B0EDD /* LocationDetailTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A07B481F430A63003B0EDD /* LocationDetailTableView.swift */; };
+		85A07B4B1F430AA4003B0EDD /* LocationDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A07B4A1F430AA4003B0EDD /* LocationDetailTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		851396521F3C8E780067F9F2 /* BankLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		851396551F3C8E780067F9F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		851396571F3C8E780067F9F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8513965A1F3C8E780067F9F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8513965C1F3C8E780067F9F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8513965F1F3C8E780067F9F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		851396611F3C8E780067F9F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8513966B1F3C8F080067F9F2 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		8513966D1F3C91A80067F9F2 /* RegionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionViewController.swift; sourceTree = "<group>"; };
+		8513966F1F3C94070067F9F2 /* RegionTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionTableView.swift; sourceTree = "<group>"; };
+		851396731F3C9B210067F9F2 /* RegionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionTableViewCell.swift; sourceTree = "<group>"; };
+		854941131F3DEEDB00C130B0 /* LocationTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTableView.swift; sourceTree = "<group>"; };
+		854941151F3DEEED00C130B0 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		85A07B461F42E993003B0EDD /* LocationDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
+		85A07B481F430A63003B0EDD /* LocationDetailTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailTableView.swift; sourceTree = "<group>"; };
+		85A07B4A1F430AA4003B0EDD /* LocationDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +68,53 @@
 		851396541F3C8E780067F9F2 /* BankLocations */ = {
 			isa = PBXGroup;
 			children = (
-				851396551F3C8E780067F9F2 /* AppDelegate.swift */,
-				851396571F3C8E780067F9F2 /* ViewController.swift */,
-				851396591F3C8E780067F9F2 /* Main.storyboard */,
+				8513966A1F3C8EC30067F9F2 /* ViewController */,
+				851396691F3C8EBE0067F9F2 /* View */,
+				851396681F3C8EB20067F9F2 /* Delegate */,
+				851396671F3C8E870067F9F2 /* Support */,
+			);
+			path = BankLocations;
+			sourceTree = "<group>";
+		};
+		851396671F3C8E870067F9F2 /* Support */ = {
+			isa = PBXGroup;
+			children = (
 				8513965C1F3C8E780067F9F2 /* Assets.xcassets */,
 				8513965E1F3C8E780067F9F2 /* LaunchScreen.storyboard */,
 				851396611F3C8E780067F9F2 /* Info.plist */,
 			);
-			path = BankLocations;
+			name = Support;
+			sourceTree = "<group>";
+		};
+		851396681F3C8EB20067F9F2 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				851396551F3C8E780067F9F2 /* AppDelegate.swift */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		851396691F3C8EBE0067F9F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8513966F1F3C94070067F9F2 /* RegionTableView.swift */,
+				851396731F3C9B210067F9F2 /* RegionTableViewCell.swift */,
+				854941131F3DEEDB00C130B0 /* LocationTableView.swift */,
+				854941151F3DEEED00C130B0 /* LocationTableViewCell.swift */,
+				85A07B481F430A63003B0EDD /* LocationDetailTableView.swift */,
+				85A07B4A1F430AA4003B0EDD /* LocationDetailTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8513966A1F3C8EC30067F9F2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8513966D1F3C91A80067F9F2 /* RegionViewController.swift */,
+				8513966B1F3C8F080067F9F2 /* LocationViewController.swift */,
+				85A07B461F42E993003B0EDD /* LocationDetailViewController.swift */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +179,6 @@
 			files = (
 				851396601F3C8E780067F9F2 /* LaunchScreen.storyboard in Resources */,
 				8513965D1F3C8E780067F9F2 /* Assets.xcassets in Resources */,
-				8513965B1F3C8E780067F9F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,22 +189,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				851396581F3C8E780067F9F2 /* ViewController.swift in Sources */,
+				85A07B471F42E993003B0EDD /* LocationDetailViewController.swift in Sources */,
+				854941141F3DEEDB00C130B0 /* LocationTableView.swift in Sources */,
+				854941161F3DEEED00C130B0 /* LocationTableViewCell.swift in Sources */,
+				85A07B491F430A63003B0EDD /* LocationDetailTableView.swift in Sources */,
+				8513966C1F3C8F080067F9F2 /* LocationViewController.swift in Sources */,
 				851396561F3C8E780067F9F2 /* AppDelegate.swift in Sources */,
+				851396741F3C9B210067F9F2 /* RegionTableViewCell.swift in Sources */,
+				8513966E1F3C91A80067F9F2 /* RegionViewController.swift in Sources */,
+				851396701F3C94070067F9F2 /* RegionTableView.swift in Sources */,
+				85A07B4B1F430AA4003B0EDD /* LocationDetailTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		851396591F3C8E780067F9F2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8513965A1F3C8E780067F9F2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8513965E1F3C8E780067F9F2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -304,6 +356,7 @@
 				851396661F3C8E780067F9F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
