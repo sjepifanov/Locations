@@ -22,21 +22,13 @@ class LocationTableView: UITableView, UITableViewDelegate, UITableViewDataSource
     private func setupView() {
         delegate = self
         dataSource = self
-        rowHeight = 48
+        rowHeight = 64
         separatorStyle = .none
         register(LocationTableViewCell.self, forCellReuseIdentifier: "\(LocationTableViewCell.self)")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
-    }
-    
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Region"
-    }
-    
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 40
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -55,6 +47,4 @@ class LocationTableView: UITableView, UITableViewDelegate, UITableViewDataSource
         }
         cell.model = LocationTableViewCell.Model(data: data[indexPath.row])
     }
-    
 }
-
