@@ -19,11 +19,13 @@ class LocationTableViewCell: UITableViewCell {
     
     private let locationNameLabel: UILabel = {
         let label = UILabel()
+        label.font = UIFont(name: "System", size: 18)
         return label
     }()
     
     private let locationAddressLabel: UILabel = {
         let label = UILabel()
+        label.font = UIFont(name: "System", size: 8)
         return label
     }()
     

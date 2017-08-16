@@ -13,10 +13,6 @@ class LocationViewController: UIViewController, LocationTableViewDelegate {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     private func setupView() {
         navigationItem.title = "Locations"
         automaticallyAdjustsScrollViewInsets = true
@@ -28,6 +24,8 @@ class LocationViewController: UIViewController, LocationTableViewDelegate {
     }
     
     func didSelectLocation() {
-        show(LocationDetailViewController(), sender: self)
+        let navigationController = UINavigationController()
+        navigationController.addChildViewController(LocationDetailViewController())
+        present(navigationController, animated: true)
     }
 }

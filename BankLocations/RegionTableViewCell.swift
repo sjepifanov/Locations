@@ -37,7 +37,6 @@ class RegionTableViewCell: UITableViewCell {
             regionNameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16)
         ])
     }
-   
 }
 
 extension RegionTableViewCell {
