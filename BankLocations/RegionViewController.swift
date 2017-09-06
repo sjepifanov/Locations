@@ -1,6 +1,6 @@
 import UIKit
 
-class RegionViewController: UIViewController, RegionTableViewDelegate {
+final class RegionViewController: UIViewController, RegionTableViewDelegate {
     
     private let regionTableView = RegionTableView()
     
@@ -28,7 +28,8 @@ class RegionViewController: UIViewController, RegionTableViewDelegate {
     }
     
     func didSelectRegion() {
-        navigationItem.title = nil // FIXME: Insert region name here. May require smaller font.
-        show(LocationViewController(), sender: self)
+        navigationItem.title = "" // FIXME: Insert region name here. May require smaller font.
+        let locationViewController = LocationViewController()
+        show(locationViewController, sender: self)
     }
 }

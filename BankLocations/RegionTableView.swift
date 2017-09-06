@@ -4,7 +4,7 @@ protocol RegionTableViewDelegate: class {
     func didSelectRegion()
 }
 
-class RegionTableView: UITableView, UITableViewDelegate, UITableViewDataSource {
+final class RegionTableView: UITableView, UITableViewDelegate, UITableViewDataSource {
     
     private let data = [["Test": "Test Field"], ["Test 2": "Test Field 2"]]
     weak var selectRegionDelegate: RegionTableViewDelegate?

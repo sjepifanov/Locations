@@ -27,7 +27,7 @@ fileprivate struct Section {
     var items: [SectionItem]
 }
 
-class LocationDetailTableView: UITableView, UITableViewDelegate, UITableViewDataSource {
+final class LocationDetailTableView: UITableView, UITableViewDelegate, UITableViewDataSource {
     
     private let data = ["Test 1", "Test 2", "Test 3", "Test 4", "Test 5", "Test 6", "Test 7", "Test 8"]
     private var sections = [Section]()
@@ -45,6 +45,7 @@ class LocationDetailTableView: UITableView, UITableViewDelegate, UITableViewData
         delegate = self
         dataSource = self
         separatorStyle = .none
+        backgroundColor = .white
         register(LocationDetailTableViewCell.self, forCellReuseIdentifier: "\(LocationDetailTableViewCell.self)")
         sections.append(Section(section: .locationDetails, items: [.locationType, .name, .address, .region]))
         sections.append(Section(section: .additionalInfo, items: [.availabilty, .info]))
@@ -56,6 +57,13 @@ class LocationDetailTableView: UITableView, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sections[section].items.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 8
+    }
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 8
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

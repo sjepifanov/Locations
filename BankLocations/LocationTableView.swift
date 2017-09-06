@@ -4,7 +4,7 @@ protocol LocationTableViewDelegate: class {
     func didSelectLocation()
 }
 
-class LocationTableView: UITableView, UITableViewDelegate, UITableViewDataSource {
+final class LocationTableView: UITableView, UITableViewDelegate, UITableViewDataSource {
     
     weak var selectLocationDelegate: LocationTableViewDelegate?
     
@@ -25,6 +25,7 @@ class LocationTableView: UITableView, UITableViewDelegate, UITableViewDataSource
         rowHeight = 64
         separatorStyle = .none
         register(LocationTableViewCell.self, forCellReuseIdentifier: "\(LocationTableViewCell.self)")
+        backgroundColor = .white
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

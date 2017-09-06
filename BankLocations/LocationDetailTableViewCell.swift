@@ -1,6 +1,6 @@
 import UIKit
 
-class LocationDetailTableViewCell: UITableViewCell {
+final class LocationDetailTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: .value2, reuseIdentifier: "\(LocationDetailTableViewCell.self)")
@@ -28,10 +28,10 @@ extension LocationDetailTableViewCell {
         let data: String?
         let selectionStyle: UITableViewCellSelectionStyle
         
-        init(item: String, data: String?) {
+        init(item: String, data: String?, selectionStyle: UITableViewCellSelectionStyle = .none) {
             self.item = item
             self.data = data
-            self.selectionStyle = .none
+            self.selectionStyle = selectionStyle
         }
     }
 }

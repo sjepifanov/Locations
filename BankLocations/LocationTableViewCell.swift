@@ -1,6 +1,6 @@
 import UIKit
 
-class LocationTableViewCell: UITableViewCell {
+final class LocationTableViewCell: UITableViewCell {
     
     private let coloredView: UIView = {
         let view = UIView()
@@ -93,7 +93,7 @@ extension LocationTableViewCell {
         let accessoryType: UITableViewCellAccessoryType
         let selectionStyle: UITableViewCellSelectionStyle
         
-        init(data: [String: String]) {
+        init(data: [String: String], accessoryType: UITableViewCellAccessoryType = .disclosureIndicator, selectionStyle: UITableViewCellSelectionStyle = .none) {
             self.locationType = "ATM"
             self.locationName = data.keys.first
             self.locationAddress = data.values.first

@@ -1,6 +1,6 @@
 import UIKit
 
-class RegionTableViewCell: UITableViewCell {
+final class RegionTableViewCell: UITableViewCell {
     
     private let regionNameLabel: UILabel = {
         let label = UILabel()

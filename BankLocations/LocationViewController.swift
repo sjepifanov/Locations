@@ -1,6 +1,6 @@
 import UIKit
 
-class LocationViewController: UIViewController, LocationTableViewDelegate {
+final class LocationViewController: UIViewController, LocationTableViewDelegate {
     
     private let locationTableView = LocationTableView()
     
@@ -25,7 +25,8 @@ class LocationViewController: UIViewController, LocationTableViewDelegate {
     
     func didSelectLocation() {
         let navigationController = UINavigationController()
-        navigationController.addChildViewController(LocationDetailViewController())
+        let locationDetailViewController = LocationDetailViewController()
+        navigationController.addChildViewController(locationDetailViewController)
         present(navigationController, animated: true)
     }
 }
