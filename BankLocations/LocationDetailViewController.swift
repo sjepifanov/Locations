@@ -1,10 +1,11 @@
 import UIKit
+import MapKit
 
 final class LocationDetailViewController: UIViewController {
     
-    private unowned let proportionalStackView = ProportionalStackView()
-    private unowned let locationDetailTableView = LocationDetailTableView()
-    private unowned let mapView = MapView()
+    private let proportionalStackView = ProportionalStackView()
+    private let locationDetailTableView = LocationDetailTableView()
+    private let mapView = MapView()
     private var isPortrait: Bool {
         return UIDevice.current.orientation.isPortrait
     }
@@ -24,6 +25,8 @@ final class LocationDetailViewController: UIViewController {
         navigationItem.setRightBarButton(doneButton, animated: true)
         navigationItem.title = "Location Details"
         view.backgroundColor = .white
+        
+        mapView.delegate = self
         
         proportionalStackView.topView.addSubview(locationDetailTableView)
         locationDetailTableView.translatesAutoresizingMaskIntoConstraints = false
@@ -62,4 +65,13 @@ final class LocationDetailViewController: UIViewController {
     @objc private func doneButtonTapped() {
         dismiss(animated: true)
     }
+    
+    deinit {
+        mapView.delegate = nil
+        print("LocationDetailViewController deallocated")
+    }
+}
+
+extension LocationDetailViewController: MKMapViewDelegate {
+    
 }

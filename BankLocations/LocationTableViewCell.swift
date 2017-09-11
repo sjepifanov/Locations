@@ -83,6 +83,10 @@ final class LocationTableViewCell: UITableViewCell {
             locationAddressLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor)
         ])
     }
+    
+    deinit {
+        print("LocationTableViewCell deallocated")
+    }
 }
 
 extension LocationTableViewCell {

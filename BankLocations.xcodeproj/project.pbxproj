@@ -24,6 +24,7 @@
 		85A07B471F42E993003B0EDD /* LocationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A07B461F42E993003B0EDD /* LocationDetailViewController.swift */; };
 		85A07B491F430A63003B0EDD /* LocationDetailTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A07B481F430A63003B0EDD /* LocationDetailTableView.swift */; };
 		85A07B4B1F430AA4003B0EDD /* LocationDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A07B4A1F430AA4003B0EDD /* LocationDetailTableViewCell.swift */; };
+		85A35E471F66C96200FEC412 /* MapViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A35E461F66C96200FEC412 /* MapViewTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		85A07B461F42E993003B0EDD /* LocationDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailViewController.swift; sourceTree = "<group>"; };
 		85A07B481F430A63003B0EDD /* LocationDetailTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailTableView.swift; sourceTree = "<group>"; };
 		85A07B4A1F430AA4003B0EDD /* LocationDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailTableViewCell.swift; sourceTree = "<group>"; };
+		85A35E461F66C96200FEC412 /* MapViewTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				85109E561F5940C800AE91BA /* MapView.swift */,
 				85109E581F5943AE00AE91BA /* ProportionalView.swift */,
 				85109E5D1F59954000AE91BA /* ProportionalStackView.swift */,
+				85A35E461F66C96200FEC412 /* MapViewTest.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				8513966C1F3C8F080067F9F2 /* LocationViewController.swift in Sources */,
 				851396561F3C8E780067F9F2 /* AppDelegate.swift in Sources */,
 				851396741F3C9B210067F9F2 /* RegionTableViewCell.swift in Sources */,
+				85A35E471F66C96200FEC412 /* MapViewTest.swift in Sources */,
 				8573283C1F471BAC001F4759 /* Country.swift in Sources */,
 				8513966E1F3C91A80067F9F2 /* RegionViewController.swift in Sources */,
 				85109E5E1F59954000AE91BA /* ProportionalStackView.swift in Sources */,

@@ -55,4 +55,8 @@ final class RegionTableView: UITableView, UITableViewDelegate, UITableViewDataSo
         }
         cell.model = RegionTableViewCell.Model(data: data[indexPath.row])
     }
+    
+    deinit {
+        print("RegionTableView deallocated")
+    }
 }

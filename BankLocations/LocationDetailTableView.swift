@@ -79,4 +79,8 @@ final class LocationDetailTableView: UITableView, UITableViewDelegate, UITableVi
         let sectionItem = sections[indexPath.section].items[indexPath.row]
         cell.model = LocationDetailTableViewCell.Model(item: sectionItem.description, data: data[indexPath.row])
     }
+    
+    deinit {
+        print("LocationDetailTableView deallocated")
+    }
 }

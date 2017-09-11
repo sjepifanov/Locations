@@ -32,4 +32,8 @@ final class RegionViewController: UIViewController, RegionTableViewDelegate {
         let locationViewController = LocationViewController()
         show(locationViewController, sender: self)
     }
+    
+    deinit {
+        print("RegionViewController deallocated")
+    }
 }

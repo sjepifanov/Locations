@@ -34,4 +34,8 @@ final class MapView: MKMapView {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius, regionRadius)
         setRegion(coordinateRegion, animated: true)
     }
+    
+    deinit {
+        print("MapView deallocated")
+    }
 }

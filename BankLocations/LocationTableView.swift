@@ -48,4 +48,8 @@ final class LocationTableView: UITableView, UITableViewDelegate, UITableViewData
         }
         cell.model = LocationTableViewCell.Model(data: data[indexPath.row])
     }
+    
+    deinit {
+        print("LocationTableView deallocated")
+    }
 }

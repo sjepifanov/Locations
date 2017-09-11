@@ -20,6 +20,10 @@ final class LocationDetailTableViewCell: UITableViewCell {
             selectionStyle = model.selectionStyle
         }
     }
+    
+    deinit {
+        print("LocationDetailTableViewCell deallocated")
+    }
 }
 
 extension LocationDetailTableViewCell {

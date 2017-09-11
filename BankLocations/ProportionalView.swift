@@ -17,4 +17,8 @@ final class ProportionalView: UIView {
         height = multiplier
         width = 1
     }
+    
+    deinit {
+        print("ProportionalView deallocated")
+    }
 }

@@ -42,4 +42,8 @@ final class ProportionalStackView: UIStackView {
         addArrangedSubview(topView)
         addArrangedSubview(bottomView)
     }
+    
+    deinit {
+        print("ProportionalStackView deallocated")
+    }
 }

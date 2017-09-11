@@ -37,6 +37,10 @@ final class RegionTableViewCell: UITableViewCell {
             regionNameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16)
         ])
     }
+    
+    deinit {
+        print("RegionTableViewCell deallocated")
+    }
 }
 
 extension RegionTableViewCell {

@@ -29,4 +29,8 @@ final class LocationViewController: UIViewController, LocationTableViewDelegate 
         navigationController.addChildViewController(locationDetailViewController)
         present(navigationController, animated: true)
     }
+    
+    deinit {
+        print("LocationViewController deallocated")
+    }
 }
