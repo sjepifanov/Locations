@@ -72,7 +72,7 @@ final class LocationTableViewCell: UITableViewCell {
         contentView.addSubview(locationAddressLabel)
         locationNameLabel.translatesAutoresizingMaskIntoConstraints = false
         locationAddressLabel.translatesAutoresizingMaskIntoConstraints = false
-        locationAddressLabel.setContentCompressionResistancePriority(UILayoutPriorityDefaultLow, for: .vertical)
+        locationAddressLabel.setContentCompressionResistancePriority(UILayoutPriority.defaultLow, for: .vertical)
         NSLayoutConstraint.activate([
             locationNameLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 2),
             locationNameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),

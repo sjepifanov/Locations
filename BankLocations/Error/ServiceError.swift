@@ -18,8 +18,3 @@ extension ServiceError {
         }
     }
 }
-
-func showError() {
-    let error = ServiceError.custom("ERROR")
-    print(error.localizedDescription)
-}

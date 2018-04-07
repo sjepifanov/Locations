@@ -52,6 +52,7 @@ final class RegionViewController: UIViewController, RegionTableViewDelegate {
     }
     
     deinit {
+        regionTableView.delegate = nil
         print("RegionViewController deallocated")
     }
 }

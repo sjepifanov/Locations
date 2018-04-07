@@ -31,6 +31,7 @@ final class LocationViewController: UIViewController, LocationTableViewDelegate 
     }
     
     deinit {
+        locationTableView.delegate = nil
         print("LocationViewController deallocated")
     }
 }

@@ -67,6 +67,7 @@ final class LocationDetailViewController: UIViewController {
     }
     
     deinit {
+        locationDetailTableView.delegate = nil
         mapView.delegate = nil
         print("LocationDetailViewController deallocated")
     }
