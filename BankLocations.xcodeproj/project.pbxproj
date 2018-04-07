@@ -11,6 +11,12 @@
 		85109E591F5943AE00AE91BA /* ProportionalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85109E581F5943AE00AE91BA /* ProportionalView.swift */; };
 		85109E5C1F598A0500AE91BA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85109E5B1F598A0500AE91BA /* MapKit.framework */; };
 		85109E5E1F59954000AE91BA /* ProportionalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85109E5D1F59954000AE91BA /* ProportionalStackView.swift */; };
+		8510D7921F78EE67008421E7 /* AsynchronousOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8510D7911F78EE67008421E7 /* AsynchronousOperation.swift */; };
+		8510D7961F78F163008421E7 /* NSLock&Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8510D7951F78F163008421E7 /* NSLock&Operation.swift */; };
+		8510D7981F78F701008421E7 /* GroupOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8510D7971F78F701008421E7 /* GroupOperation.swift */; };
+		8510D79B1F790230008421E7 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8510D79A1F790230008421E7 /* ServiceError.swift */; };
+		8510D79E1F79031D008421E7 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8510D79D1F79031D008421E7 /* Result.swift */; };
+		8510D7A01F790984008421E7 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8510D79F1F790984008421E7 /* NetworkRequest.swift */; };
 		851396561F3C8E780067F9F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851396551F3C8E780067F9F2 /* AppDelegate.swift */; };
 		8513965D1F3C8E780067F9F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8513965C1F3C8E780067F9F2 /* Assets.xcassets */; };
 		851396601F3C8E780067F9F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8513965E1F3C8E780067F9F2 /* LaunchScreen.storyboard */; };
@@ -33,6 +39,12 @@
 		85109E581F5943AE00AE91BA /* ProportionalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProportionalView.swift; sourceTree = "<group>"; };
 		85109E5B1F598A0500AE91BA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		85109E5D1F59954000AE91BA /* ProportionalStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProportionalStackView.swift; sourceTree = "<group>"; };
+		8510D7911F78EE67008421E7 /* AsynchronousOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynchronousOperation.swift; sourceTree = "<group>"; };
+		8510D7951F78F163008421E7 /* NSLock&Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLock&Operation.swift"; sourceTree = "<group>"; };
+		8510D7971F78F701008421E7 /* GroupOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupOperation.swift; sourceTree = "<group>"; };
+		8510D79A1F790230008421E7 /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		8510D79D1F79031D008421E7 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		8510D79F1F790984008421E7 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		851396521F3C8E780067F9F2 /* BankLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		851396551F3C8E780067F9F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8513965C1F3C8E780067F9F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,6 +84,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8510D7941F78F126008421E7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8510D7951F78F163008421E7 /* NSLock&Operation.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8510D7991F79020A008421E7 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				8510D79A1F790230008421E7 /* ServiceError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		8510D79C1F790302008421E7 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				8510D79D1F79031D008421E7 /* Result.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
 		851396491F3C8E780067F9F2 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +128,9 @@
 		851396541F3C8E780067F9F2 /* BankLocations */ = {
 			isa = PBXGroup;
 			children = (
+				8510D79C1F790302008421E7 /* Result */,
+				8510D7991F79020A008421E7 /* Error */,
+				8510D7941F78F126008421E7 /* Extension */,
 				856ACA421F71D8DB0085D09E /* Operations */,
 				8573283A1F471099001F4759 /* Network */,
 				857328391F471082001F4759 /* Model */,
@@ -151,6 +190,9 @@
 		856ACA421F71D8DB0085D09E /* Operations */ = {
 			isa = PBXGroup;
 			children = (
+				8510D7911F78EE67008421E7 /* AsynchronousOperation.swift */,
+				8510D7971F78F701008421E7 /* GroupOperation.swift */,
+				8510D79F1F790984008421E7 /* NetworkRequest.swift */,
 			);
 			name = Operations;
 			sourceTree = "<group>";
@@ -248,20 +290,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8510D79B1F790230008421E7 /* ServiceError.swift in Sources */,
+				8510D7961F78F163008421E7 /* NSLock&Operation.swift in Sources */,
 				85A07B471F42E993003B0EDD /* LocationDetailViewController.swift in Sources */,
 				85109E571F5940C800AE91BA /* MapView.swift in Sources */,
 				854941141F3DEEDB00C130B0 /* LocationTableView.swift in Sources */,
 				854941161F3DEEED00C130B0 /* LocationTableViewCell.swift in Sources */,
 				85A07B491F430A63003B0EDD /* LocationDetailTableView.swift in Sources */,
 				8513966C1F3C8F080067F9F2 /* LocationViewController.swift in Sources */,
+				8510D7A01F790984008421E7 /* NetworkRequest.swift in Sources */,
 				851396561F3C8E780067F9F2 /* AppDelegate.swift in Sources */,
 				851396741F3C9B210067F9F2 /* RegionTableViewCell.swift in Sources */,
 				85A35E471F66C96200FEC412 /* MapViewTest.swift in Sources */,
+				8510D7981F78F701008421E7 /* GroupOperation.swift in Sources */,
 				8573283C1F471BAC001F4759 /* AnyCountry.swift in Sources */,
 				8513966E1F3C91A80067F9F2 /* RegionViewController.swift in Sources */,
 				85109E5E1F59954000AE91BA /* ProportionalStackView.swift in Sources */,
 				851396701F3C94070067F9F2 /* RegionTableView.swift in Sources */,
 				856ACA411F71C7540085D09E /* AnyLocation.swift in Sources */,
+				8510D7921F78EE67008421E7 /* AsynchronousOperation.swift in Sources */,
+				8510D79E1F79031D008421E7 /* Result.swift in Sources */,
 				85A07B4B1F430AA4003B0EDD /* LocationDetailTableViewCell.swift in Sources */,
 				85109E591F5943AE00AE91BA /* ProportionalView.swift in Sources */,
 			);
