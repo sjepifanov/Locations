@@ -20,7 +20,7 @@ extension AnyCountry {
 
 struct Country: AnyCountry {
     let name: String
-    var regions: [String: [AnyLocation]]
+    internal(set) var regions: [String: [AnyLocation]]
 }
 
 extension Country {
