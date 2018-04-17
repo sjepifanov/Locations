@@ -8,6 +8,7 @@ class AsynchronousOperation: Operation {
     
     let stateLock = NSLock()
     
+    // TODO: May need to add _isReady in case operation have to be prepared before it coul be added to queue
     private var _isExecuting: Bool
     private var _isFinished: Bool
     
