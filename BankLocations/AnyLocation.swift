@@ -12,58 +12,58 @@ protocol AnyLocation {
     var isCoinStationAvailable: Bool { get }
 }
 
-struct Location: AnyLocation {
-    let name: String
-    let address: String
-    let type: LocationType
-    let lattitude: Double
-    let longitude: Double
-    let availability: String?
-    let info: String?
-    let isCashOperationAvailable: Bool
-    let isCoinStationAvailable: Bool
-}
+//struct Location: AnyLocation {
+//    let name: String
+//    let address: String
+//    let type: LocationType
+//    let lattitude: Double
+//    let longitude: Double
+//    let availability: String?
+//    let info: String?
+//    let isCashOperationAvailable: Bool
+//    let isCoinStationAvailable: Bool
+//}
 
-extension Location: Decodable {
-    enum LocationKeys: String, CodingKey {
-        case region = "r"
-        case name = "n"
-        case address = "a"
-        case type = "t"
-        case lattitude = "lat"
-        case longitude = "lon"
-        case availability = "av"
-        case info = "i"
-        case isCashOperationAvailable = "ncash"
-        case isCoinStationAvailable = "cs"
-    }
-    
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: LocationKeys.self)
-        let region = try container.decode(String.self, forKey: .region)
-        let name = try container.decode(String.self, forKey: .name)
-        let address = try container.decode(String.self, forKey: .address)
-        let type = try container.decode(Int.self, forKey: .type)
-        let lattitude = try container.decode(Double.self, forKey: .lattitude)
-        let longitude = try container.decode(Double.self, forKey: .longitude)
-        let availability = try? container.decode(String.self, forKey: .availability)
-        let info = try? container.decode(String.self, forKey: .info)
-        let isCashOperationAvailable = try container.decode(String.self, forKey: .isCashOperationAvailable)
-        let isCoinStationAvailable = try container.decode(String.self, forKey: .isCoinStationAvailable)
-        
-        // FIXME: Provide failable initializer or flatMap values to remove nils
-        self.init(name: name,
-                  address: address,
-                  // FIXME: Unwrap Location type! Or provide implementation through enum.
-                  type: LocationType(rawValue: type)!,
-                  lattitude: lattitude,
-                  longitude: longitude,
-                  availability: availability,
-                  info: info,
-                  isCashOperationAvailable: isCashOperationAvailable.boolValue,
-                  isCoinStationAvailable: isCoinStationAvailable.boolValue)
-    }
-}
+//extension Location: Decodable {
+//    enum LocationKeys: String, CodingKey {
+//        case region = "r"
+//        case name = "n"
+//        case address = "a"
+//        case type = "t"
+//        case lattitude = "lat"
+//        case longitude = "lon"
+//        case availability = "av"
+//        case info = "i"
+//        case isCashOperationAvailable = "ncash"
+//        case isCoinStationAvailable = "cs"
+//    }
+//    
+//    init(from decoder: Decoder) throws {
+//        let container = try decoder.container(keyedBy: LocationKeys.self)
+//        let region = try container.decode(String.self, forKey: .region)
+//        let name = try container.decode(String.self, forKey: .name)
+//        let address = try container.decode(String.self, forKey: .address)
+//        let type = try container.decode(Int.self, forKey: .type)
+//        let lattitude = try container.decode(Double.self, forKey: .lattitude)
+//        let longitude = try container.decode(Double.self, forKey: .longitude)
+//        let availability = try? container.decode(String.self, forKey: .availability)
+//        let info = try? container.decode(String.self, forKey: .info)
+//        let isCashOperationAvailable = try container.decode(String.self, forKey: .isCashOperationAvailable)
+//        let isCoinStationAvailable = try container.decode(String.self, forKey: .isCoinStationAvailable)
+//        
+//        // FIXME: Provide failable initializer or flatMap values to remove nils
+//        self.init(name: name,
+//                  address: address,
+//                  // FIXME: Unwrap Location type! Or provide implementation through enum.
+//                  type: LocationType(rawValue: type)!,
+//                  lattitude: lattitude,
+//                  longitude: longitude,
+//                  availability: availability,
+//                  info: info,
+//                  isCashOperationAvailable: isCashOperationAvailable.boolValue,
+//                  isCoinStationAvailable: isCoinStationAvailable.boolValue)
+//    }
+//}
 
 //extension Location {
 //    init?(_ location: [String: Any]) {
@@ -110,17 +110,6 @@ extension LocationType {
         case .branch: return "Branch"
         case .atm: return "ATM"
         case .bna: return "BNA"
-        }
-    }
-}
-
-extension String {
-    var boolValue: Bool {
-        switch self.lowercased() {
-        case "true", "yes", "1":
-            return true
-        default:
-            return false
         }
     }
 }

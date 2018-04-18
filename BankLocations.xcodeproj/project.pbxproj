@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85023E712087580900923122 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85023E702087580900923122 /* Model.swift */; };
+		85023E732087587800923122 /* AnyRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85023E722087587800923122 /* AnyRegion.swift */; };
+		85023E75208759AF00923122 /* String&Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85023E74208759AF00923122 /* String&Model.swift */; };
+		85023E77208759D800923122 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85023E76208759D800923122 /* Countries.swift */; };
 		85109E571F5940C800AE91BA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85109E561F5940C800AE91BA /* MapView.swift */; };
 		85109E591F5943AE00AE91BA /* ProportionalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85109E581F5943AE00AE91BA /* ProportionalView.swift */; };
 		85109E5C1F598A0500AE91BA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85109E5B1F598A0500AE91BA /* MapKit.framework */; };
@@ -36,6 +40,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		85023E702087580900923122 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		85023E722087587800923122 /* AnyRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyRegion.swift; sourceTree = "<group>"; };
+		85023E74208759AF00923122 /* String&Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String&Model.swift"; sourceTree = "<group>"; };
+		85023E76208759D800923122 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
 		85109E561F5940C800AE91BA /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		85109E581F5943AE00AE91BA /* ProportionalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProportionalView.swift; sourceTree = "<group>"; };
 		85109E5B1F598A0500AE91BA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -90,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				8510D7951F78F163008421E7 /* NSLock&Operation.swift */,
+				85023E74208759AF00923122 /* String&Model.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -202,8 +211,11 @@
 			isa = PBXGroup;
 			children = (
 				8573283B1F471BAC001F4759 /* AnyCountry.swift */,
+				85023E722087587800923122 /* AnyRegion.swift */,
 				856ACA401F71C7540085D09E /* AnyLocation.swift */,
+				85023E702087580900923122 /* Model.swift */,
 				85BB07D12080BFFB008C231E /* Database.swift */,
+				85023E76208759D800923122 /* Countries.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -303,19 +315,23 @@
 				85BB07D22080BFFB008C231E /* Database.swift in Sources */,
 				85A07B491F430A63003B0EDD /* LocationDetailTableView.swift in Sources */,
 				8513966C1F3C8F080067F9F2 /* LocationViewController.swift in Sources */,
+				85023E75208759AF00923122 /* String&Model.swift in Sources */,
 				8510D7A01F790984008421E7 /* NetworkRequest.swift in Sources */,
 				851396561F3C8E780067F9F2 /* AppDelegate.swift in Sources */,
 				851396741F3C9B210067F9F2 /* RegionTableViewCell.swift in Sources */,
 				85A35E471F66C96200FEC412 /* MapViewTest.swift in Sources */,
 				8510D7981F78F701008421E7 /* GroupOperation.swift in Sources */,
 				8573283C1F471BAC001F4759 /* AnyCountry.swift in Sources */,
+				85023E712087580900923122 /* Model.swift in Sources */,
 				8513966E1F3C91A80067F9F2 /* RegionViewController.swift in Sources */,
 				85109E5E1F59954000AE91BA /* ProportionalStackView.swift in Sources */,
 				851396701F3C94070067F9F2 /* RegionTableView.swift in Sources */,
 				856ACA411F71C7540085D09E /* AnyLocation.swift in Sources */,
 				8510D7921F78EE67008421E7 /* AsynchronousOperation.swift in Sources */,
+				85023E77208759D800923122 /* Countries.swift in Sources */,
 				8510D79E1F79031D008421E7 /* Result.swift in Sources */,
 				85A07B4B1F430AA4003B0EDD /* LocationDetailTableViewCell.swift in Sources */,
+				85023E732087587800923122 /* AnyRegion.swift in Sources */,
 				85109E591F5943AE00AE91BA /* ProportionalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
