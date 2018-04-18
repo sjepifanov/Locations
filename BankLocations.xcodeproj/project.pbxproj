@@ -33,7 +33,6 @@
 		85A07B4B1F430AA4003B0EDD /* LocationDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A07B4A1F430AA4003B0EDD /* LocationDetailTableViewCell.swift */; };
 		85A35E471F66C96200FEC412 /* MapViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A35E461F66C96200FEC412 /* MapViewTest.swift */; };
 		85BB07D22080BFFB008C231E /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BB07D12080BFFB008C231E /* Database.swift */; };
-		85FE237C208498250038D2B8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FE237B208498250038D2B8 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,7 +64,6 @@
 		85A07B4A1F430AA4003B0EDD /* LocationDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDetailTableViewCell.swift; sourceTree = "<group>"; };
 		85A35E461F66C96200FEC412 /* MapViewTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewTest.swift; sourceTree = "<group>"; };
 		85BB07D12080BFFB008C231E /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
-		85FE237B208498250038D2B8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,7 +201,6 @@
 		857328391F471082001F4759 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				85FE237B208498250038D2B8 /* Model.swift */,
 				8573283B1F471BAC001F4759 /* AnyCountry.swift */,
 				856ACA401F71C7540085D09E /* AnyLocation.swift */,
 				85BB07D12080BFFB008C231E /* Database.swift */,
@@ -312,7 +309,6 @@
 				85A35E471F66C96200FEC412 /* MapViewTest.swift in Sources */,
 				8510D7981F78F701008421E7 /* GroupOperation.swift in Sources */,
 				8573283C1F471BAC001F4759 /* AnyCountry.swift in Sources */,
-				85FE237C208498250038D2B8 /* Model.swift in Sources */,
 				8513966E1F3C91A80067F9F2 /* RegionViewController.swift in Sources */,
 				85109E5E1F59954000AE91BA /* ProportionalStackView.swift in Sources */,
 				851396701F3C94070067F9F2 /* RegionTableView.swift in Sources */,
